@@ -38,33 +38,6 @@ Aplikasi Android untuk manajemen registrasi mahasiswa menggunakan **Jetpack Comp
 
 ---
 
-## 🏗️ Struktur Project
-
-```
-app/src/main/java/com/studentregist/app/
-├── AppConstants.kt           # Data statis (fakultas, prodi, dll)
-├── MainActivity.kt
-├── data/
-│   ├── entity/Student.kt     # Model data / tabel Room
-│   ├── dao/StudentDao.kt     # Query database
-│   └── database/AppDatabase.kt
-├── repository/
-│   └── StudentRepository.kt  # Layer abstraksi data
-├── viewmodel/
-│   └── StudentViewModel.kt   # Business logic + state
-└── ui/
-    ├── AppTheme.kt           # Warna & tema Material3
-    ├── AppNavigation.kt      # State navigasi login/main
-    ├── login/LoginScreen.kt
-    ├── students/StudentsScreen.kt
-    └── components/
-        ├── StudentCard.kt
-        ├── StudentFormDialog.kt
-        └── DeleteConfirmDialog.kt
-```
-
----
-
 ## 📦 Tech Stack
 
 | Library | Versi | Kegunaan |
@@ -75,12 +48,3 @@ app/src/main/java/com/studentregist/app/
 | Kotlin Coroutines | 1.8.1 | Async operations |
 | Material3 | — | Design system |
 | Navigation Compose | 2.7.7 | Navigasi antar layar |
-
----
-
-## 🎨 Desain
-
-- **Warna utama**: Indigo (#4F46E5) + Teal (#14B8A6)
-- **UI framework**: Material Design 3
-- **Tema**: Light mode dengan gradient header
-- **Komponen**: Card, ExtendedFAB, FilterChip, ExposedDropdownMenu
